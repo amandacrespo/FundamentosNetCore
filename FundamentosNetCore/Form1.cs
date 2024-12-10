@@ -37,6 +37,7 @@ namespace FundamentosNetCore
             //lblRes.Location = new Point(20, 10);
             //lblRes.TextAlign = HorizontalAlignment.Center;
             lblRes.BackColor = Color.Yellow;
+            string texto = "";
         }
     }
 }
