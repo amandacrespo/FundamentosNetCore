@@ -13,7 +13,7 @@ namespace FundamentosNetCore
 {
     public partial class DiaNacimiento : Form
     {
-        public DiaNacimiento()
+        public DiaNacimiento()  
         {
             InitializeComponent();
         }

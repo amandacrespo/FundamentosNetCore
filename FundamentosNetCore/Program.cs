@@ -12,7 +12,7 @@ namespace FundamentosNetCore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new DiaNacimiento());
+            Application.Run(new Form6string());
         }
     }
 }
