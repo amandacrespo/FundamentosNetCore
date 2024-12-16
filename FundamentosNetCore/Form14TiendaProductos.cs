@@ -68,11 +68,7 @@ namespace FundamentosNetCore
 
         private void btnTodos_Click(object sender, EventArgs e)
         {
-            foreach (var item in this.lstTienda.Items)
-            {
-                this.lstAlmacen.Items.Add(item);
-            }
-
+            this.lstAlmacen.Items.AddRange(this.lstTienda.Items);
             this.lstTienda.Items.Clear();
         }
 
