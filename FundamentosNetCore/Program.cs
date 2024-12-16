@@ -12,7 +12,7 @@ namespace FundamentosNetCore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new Form12CollecionMultiple());
+            Application.Run(new Form14TiendaProductos());
         }
     }
 }
