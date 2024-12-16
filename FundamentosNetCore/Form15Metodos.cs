@@ -17,7 +17,7 @@ namespace FundamentosNetCore
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void labe     l2_Click(object sender, EventArgs e)
         {
 
         }
@@ -63,12 +63,12 @@ namespace FundamentosNetCore
             this.lblRaton.Text = e.X.ToString() + ", " + e.Y.ToString();
         }
 
-        private void txtSoloNum_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (char.IsDigit(e.KeyData) == false)
-            {
-                // COPIAR LO DE PACO, CON KEYPRESS
-            }
-        }
+        //private void txtSoloNum_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (char.IsDigit(e.KeyData) == false)
+        //    {
+        //        // COPIAR LO DE PACO, CON KEYPRESS
+        //    }
+        //}
     }
 }
