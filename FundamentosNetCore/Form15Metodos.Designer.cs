@@ -130,7 +130,6 @@
             txtSoloNum.Name = "txtSoloNum";
             txtSoloNum.Size = new Size(100, 23);
             txtSoloNum.TabIndex = 9;
-            txtSoloNum.KeyUp += txtSoloNum_KeyUp;
             // 
             // txtSoloLet
             // 
