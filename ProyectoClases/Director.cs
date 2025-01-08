@@ -16,7 +16,22 @@ namespace ProyectoClases
         public Director() 
         {
             Debug.WriteLine("Constructor de Director vacío");
-            this.SalarioMinimo = 1200;
+            this.SalarioMinimo += 200;
+        }
+
+        //public override int GetDiasVacaciones()
+        public new int GetDiasVacaciones() // Metodo sobreescrito
+        {
+            Debug.WriteLine("GetDiasVacaciones() Director");
+            this.Vacaciones = base.GetDiasVacaciones() + 8;
+            return this.Vacaciones;
+        }
+
+        public int GetDiasVacaciones(int extras) // Metodo implementado
+        {
+            Debug.WriteLine("GetDiasVacaciones() Director extras");
+            this.Vacaciones = this.GetDiasVacaciones() + extras;
+            return this.Vacaciones;
         }
         #endregion
     }

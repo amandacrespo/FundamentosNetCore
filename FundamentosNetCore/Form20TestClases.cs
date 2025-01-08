@@ -52,14 +52,12 @@ namespace FundamentosNetCore
             Empleado emp = new Empleado();
             emp.Nombre = "Empleado";
             emp.Apellidos = "Vuelta Clase";
-            this.lstClases.Items.Add(emp.getNombreCompleto());
-            this.lstClases.Items.Add("Salario empleado " +emp.SalarioMinimo);
+            this.lstClases.Items.Add(emp.getNombreCompleto() + ", " + emp.GetSalarioMin() + ", " + emp.GetDiasVacaciones());
 
             Director dir = new Director();
             dir.Nombre = "Director";
             dir.Apellidos = "Quiero Vacaciones";
-            this.lstClases.Items.Add(dir.getNombreCompleto());
-            this.lstClases.Items.Add("Salario director " + dir.SalarioMinimo);
+            this.lstClases.Items.Add(dir.getNombreCompleto() + ", " + dir.GetSalarioMin() + ", " + dir.GetDiasVacaciones());
         }
     }
 }
