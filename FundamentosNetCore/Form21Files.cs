@@ -68,9 +68,28 @@ namespace FundamentosNetCore
 
         }
 
-        private void btnRead_Click(object sender, EventArgs e)
+        private async void btnRead_Click(object sender, EventArgs e)
         {
+            FileInfo file = new FileInfo(this.Path);
 
+            // Creamos el fichero con TextWriter.
+            using (TextReader reader = file.OpenText())
+            {
+                string contenido = await reader.ReadToEndAsync();
+                reader.Close();
+                this.txtContenido.Text = contenido;
+                this.RellenarListbox(contenido);
+            }
+        }
+
+        public void RellenarListbox(string contenido)
+        {
+            string[] data = contenido.Split(',');
+            this.lstNombres.Items.Clear();
+            foreach (var name in data)
+            {
+                this.lstNombres.Items.Add(name);
+            }
         }
 
     }
