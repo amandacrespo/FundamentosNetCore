@@ -42,6 +42,24 @@ namespace FundamentosNetCore
             };
 
             this.lstClases.Items.Add(persona.ToString());
-        } 
+        }
+
+        private void btnNewEmp_Click(object sender, EventArgs e)
+        {
+            // Una clase siempre leerá el constructor vacío de la clase que hereda (si lo tiene).
+            // Se le puede indicar que lea otro constructor que no sea vacio o que la base no tenga constructor por defecto.
+            //Empleado emp = new Empleado("Empleado", "Vuelta a clase");
+            Empleado emp = new Empleado();
+            emp.Nombre = "Empleado";
+            emp.Apellidos = "Vuelta Clase";
+            this.lstClases.Items.Add(emp.getNombreCompleto());
+            this.lstClases.Items.Add("Salario empleado " +emp.SalarioMinimo);
+
+            Director dir = new Director();
+            dir.Nombre = "Director";
+            dir.Apellidos = "Quiero Vacaciones";
+            this.lstClases.Items.Add(dir.getNombreCompleto());
+            this.lstClases.Items.Add("Salario director " + dir.SalarioMinimo);
+        }
     }
 }

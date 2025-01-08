@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,18 @@ namespace ProyectoClases
 
 
         #region METODOS
+        public Persona()
+        {
+            Debug.WriteLine("Constructor de Persona Vacío");
+        }
+
+        public Persona(string nom, string apellidos)
+        {
+            Debug.WriteLine("Constructor de Persona con 2 parámetros");
+            this.Nombre = nom;
+            this.Apellidos = apellidos;
+        }
+
         public string getNombreCompleto()
         {
             return this.Nombre + " " + this.Apellidos;
