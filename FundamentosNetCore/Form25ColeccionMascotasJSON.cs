@@ -77,5 +77,17 @@ namespace FundamentosNetCore
                 this.DibujarMascotas();
             }
         }
-    }
+
+        private void lstMascotas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = this.lstMascotas.SelectedIndex;
+            if (index != -1)
+            {
+                Mascota mascota = this.mascotasList[index];
+                this.txtNombre.Text = mascota.Nombre;
+                this.txtRaza.Text = mascota.Raza;
+                this.txtYears.Text = mascota.Years.ToString();
+            }
+        }
+    }   
 }
