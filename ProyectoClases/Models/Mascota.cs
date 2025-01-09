@@ -12,10 +12,15 @@ namespace ProyectoClases.Models
         public string Raza { get; set; }
         public int Years { get; set; }
 
-        public Mascota(string nom, string raz) 
-        { 
+        public Mascota(string nom, string raz)
+        {
             this.Nombre = nom;
             this.Raza = raz;
+        }
+
+        public Mascota()
+        {
+            
         }
 
         public string GetMascota()

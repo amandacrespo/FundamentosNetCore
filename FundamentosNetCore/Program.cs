@@ -12,7 +12,7 @@ namespace FundamentosNetCore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new Form23ObjetoSerializado());
+            Application.Run(new Form25ColeccionMascotasJSON());
         }
     }
 }

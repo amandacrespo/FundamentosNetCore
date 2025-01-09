@@ -39,7 +39,9 @@ namespace FundamentosNetCore
 
         private async void btnGuardar_Click(object sender, EventArgs e)
         {
-            Mascota m = new Mascota(this.txtNom.Text, this.txtRaz.Text);
+            Mascota m = new Mascota();
+            m.Nombre = this.txtNom.Text;
+            m.Raza = this.txtRaz.Text;
             m.Years = int.Parse(this.txtYears.Text);
 
             // Para guardar los datos dentro de un fichero debemos usar StreamWriter
