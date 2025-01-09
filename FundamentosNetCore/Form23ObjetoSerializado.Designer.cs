@@ -104,6 +104,7 @@
             btnGuardar.TabIndex = 7;
             btnGuardar.Text = "Guardar dato";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // Form23ObjetoSerializado
             // 
